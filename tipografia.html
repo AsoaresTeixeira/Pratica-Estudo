@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+<!--Links de Estilo-->
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <title>Projeto My Components</title>
+</head>
+
+<body>
+
+
+<!--Cabeçado-->
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img src="imagens/perfil.png" alt="Nome do Usuario do Perfil" class="perfil-img">
+            </a>
+
+            <!--Links para Paginas-->
+                <ul class="pages">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tipografia.html">Tipografia</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>
+                    <li><a href="botoes.html">Botões</a></li>
+                    <li><a href="tabelas.html">Tabelas</a></li>   
+
+                </ul>
+            <!--------------------------------------------------------------->
+
+
+        </nav>
+    </header>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--Conteudo Principal-->
+
+    <main class="main">
+        <h1 class="title">My Components</h1>
+
+        <article class="highlight">
+            <h2>Tipografia</h2>
+
+            <p>A tipografia transmite definições de tamanhos e espaçamentos e deve ser utilizada respeitando a hierarquia dos elementos na interface.</p>
+        </article>
+        
+        <!--Section da Main (tipografia)-->
+        <section>
+            <h3>Elementos</h3>
+
+            <article class="container_1">
+                <h4>Textos</h4>
+
+                <p>Esse texto está escrito em <b>negrito</b> e esse texto é um <strong>texto forte</strong>.</p>
+                <p>Esse texto está em <i>itálico</i> e este está <em>com ênfase</em>.</p>
+                <p>Isto é um texto escrito de forma  <u class="underline">erada</u> e isso e um <a href="#">link</a></p>
+            </article>
+
+            <article class="container_1">
+                <h4>Sobreescrito e Subscrito</h4>
+                <p> 3<sup>2</sup> é igual à 9</p>
+                <p> a fórmula da água é H<sub>2</sub>O</p>
+            </article>
+
+            <article class="container_1">
+                <h4>Abreviações</h4>
+
+                <p>Para criar páginas na web precisamos aprender sobre <abbr title="HiperText Markup Language">HTML</abbr>.</p>
+                <p>Para criar páginas na web precisamos aprender sobre <a href="#html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></a>.</p>
+                <p>O <dfn id="html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></dfn> é a principal linguagem da web onde podemos incluir nosso conteúdo de forma semântica</p>
+            </article>
+
+            <article class="container_1">
+                <h4>Citações</h4>
+
+                <blockquote>
+                    <p>O ruim não ter trabalho. O ruim é ter de trabalhar</p>
+                    <cite>- Seu Madruga</cite>
+                </blockquote>
+
+                <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+                    O Elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação.
+                    <cite>- MDN</cite>
+                </blockquote>
+
+                <p>Segundo o Seu Madruga <q>A vingança nunca é plena, mata a alma e envenena</q>.</p>
+
+                <p>
+                    De acordo com o site da Mozilla,
+                    <q cite="https://www.mozilla.org/pt-BR/about/history/details/"
+                      >Firefox foi lançado em 2004 e se tornou um grande sucesso.</q
+                    >
+                  </p>
+
+                <p>O filme <cite>Escola do Rock</cite> contém várias músicas incriveis.</p>  
+                
+            </article>
+
+            <article class="container_1">
+                <h4>Coisas de Computador</h4>
+
+                <p>A propiedade <code>background </code> do CSS serve para colocar uma imagem de fundo</p>
+                
+                <pre>
+                    Este texto é um texto 
+                    
+                    pré-formatado.
+                </pre>
+
+                <pre>
+                    <code>
+                        .container_1{
+                            padding-top: 1px;
+                            padding-bottom: 1px;
+                        }
+                    </code>
+                </pre>
+
+                <p>Após executar o método <code>push()</code> obtive o o retorno <samp lang="en-us">undefined has not a push() function</samp> </p>
+                
+                <p>Pressione a teclas <kbd>CNTRL</kbd> + <kbd>C</kbd> para copiar</p>
+            </article>
+
+            <article class="container_1">
+                <h4>datas e horários</h4>
+
+                <p>O evento ocorrerá em <time datetime="2025-11-10">10 de Novembro de 2025</time>. </p>
+                <p>o evento ocorrerá em <time datetime="2025-11-10">10/11/2025</time>.</p>
+                <p>O evento ocorrerá às <time datetime="2025-11-10T20:00:00">20h00 do dia 10 de Novembro de 2025</time>.</p> 
+                <p>O evento ocorrerá às <time datetime="2025-11-10T20:00:00-03:00">20h00 do dia 10 de Novembro de 2025</time>.</p>
+
+                <h5 lang="en-us">JS Conference</h5>
+                <p>O evento Inciará exatamente às <time datetime="19:00">19h00</time></p>
+
+                <p>O evento ocorrerá às 20h00 <del datetime="2025-11-05">10 de Novembro de 2025</del>  <ins datetime="2025-11-05" ><time datetime="2025-11-11T20:00:00-03:00"> 11 de Novembro de 2025</time></ins>.</p>
+            </article>
+        </section>
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+    </main>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+<!--Links de Estilo-->
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <title>Projeto My Components</title>
+</head>
+
+<body>
+
+
+<!--Cabeçado-->
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img src="imagens/perfil.png" alt="Nome do Usuario do Perfil" class="perfil-img">
+            </a>
+
+            <!--Links para Paginas-->
+                <ul class="pages">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tipografia.html">Tipografia</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>
+                    <li><a href="botoes.html">Botões</a></li>
+                    <li><a href="tabelas.html">Tabelas</a></li>   
+
+                </ul>
+            <!--------------------------------------------------------------->
+
+
+        </nav>
+    </header>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--Conteudo Principal-->
+
+    <main class="main">
+        <h1 class="title">My Components</h1>
+
+        
+        
+        <!--Section da Main (Cards)-->
+            <section class="box_container">
+                <h2>Entre em contato</h2>
+
+                <div class="row">
+                    <form action="">
+                        <div class="row">
+                            <div>
+                                <label for="nome" class="named_box">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="text_box">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="named_box">Email</label>
+                                <input type="email" name="email" id="email" autocomplete="off" placeholder="email@gmail.com" class="text_box">
+                            </div>
+                        </div>
+
+                        <label for="mensagem" class="named_box">Digite sua mensagem</label>
+                        <textarea name="mensagem" id="mensagem"  rows="6" class="text_box_area"></textarea>
+
+                        <input type="submit" value="Enviar" class="btn btn_input" >
+                    </form>
+
+                    <address>
+                        <p><b>Endereço</b> 1234 Somewhere Rd.Nashville, TN 00000 United States</p>
+                        <p><b>Telefone</b> 000-000-000</p>  
+                        <p><b>Email</b> email@server.com</p>
+                    </address>
+                
+                </div>  
+            </section>
+
+            <section class="box_container">
+                <h2>Quiz</h2>
+
+                <form action="" class="format-quiz">
+                    <label for="tecnologia" class="named_box">Qual sua linguagem preferida?</label>
+                    <select name="tecnologia" id="tecnologia" class="choice_box">
+                        <option value="null">Selecione</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">Javascript</option>
+                        <option value="python">Python</option>
+                        <option value="c#">C#</option>
+                    </select>
+                   
+                    <label class="named_box">Baixa Prioridade <input type="radio" name="prioridade" value="baixa" class="text_box "></label>
+                    <label class="named_box">Média Prioridade <input type="radio" name="prioridade" value="media" class="text_box "></label>
+                    <label class="named_box">Alta Prioridade <input type="radio" name="prioridade" value="alta" class="text_box "></label>
+
+                    <label  class="named_box"> <input type="checkbox" name="copy" value="true" class="text_box"> Envie-me uma cópia</label>
+                    <label  class="named_box"> <input type="checkbox" name="humano" value="true" class="text_box"> Sou um Humano</label>
+
+                    <div class="row">
+                        <input type="reset" value="Limpar" class="text_box">
+                        <input type="submit" value="Enviar" class="text_box btn btn-stroke">
+                    </div>
+                    
+                </form>
+            </section>
+        <!--------------------------------------------------------------------------------------->
+
+       
+    </main>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</body>
+
+</html>
